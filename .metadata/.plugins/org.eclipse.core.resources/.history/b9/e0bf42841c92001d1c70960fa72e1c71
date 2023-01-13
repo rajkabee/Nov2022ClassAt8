@@ -1,0 +1,7 @@
+package com.swingGui.jTable;
+
+import javax.swing.table.DefaultTableModel;
+
+public class MyTableModel extends DefaultTableModel {
+
+}

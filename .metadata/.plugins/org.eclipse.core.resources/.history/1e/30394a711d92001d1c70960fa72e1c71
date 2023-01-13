@@ -1,0 +1,11 @@
+package com.swingGui.jTable;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.table.DefaultTableModel;
+
+public class MyTableModel extends DefaultTableModel {
+	String[] cols = {"Sn.", "Name", "Email", "Contact"};
+	List<User> data = new ArrayList<>();
+}

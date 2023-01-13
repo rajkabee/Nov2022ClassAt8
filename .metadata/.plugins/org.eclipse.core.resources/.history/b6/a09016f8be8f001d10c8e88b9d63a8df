@@ -1,0 +1,13 @@
+package com.swingGui;
+
+import javax.swing.JFrame;
+
+public class JFrameExample {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("Dursikshya");
+		frame.setTitle("Apple");
+		
+		
+		frame.setVisible(true);
+	}
+}

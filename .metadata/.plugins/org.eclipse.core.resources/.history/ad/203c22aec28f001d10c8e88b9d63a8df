@@ -1,0 +1,10 @@
+package com.swingGui.jMenu;
+
+import com.swingGui.Frame;
+
+public class JMenuExample {
+	public static void main(String[] args) {
+		Frame frame = new Frame();
+		frame.setVisible(true);
+	}
+}

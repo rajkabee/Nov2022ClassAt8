@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+		
+		<context:property-placeholder location="application.properties"/>
+		
+		<bean id="microsoft" class="com.example.coreJava.springFramework.objectInjection.Manufacturer">
+   			<property name="id" value="456"/>
+   			<property name="name" value="Microsoft"/>
+   			<property name="country" value="USA"/>
+   		</bean>
+   		<bean id="manufacturerada" class="com.example.coreJava.springFramework.objectInjection.Manufacturer">
+   			<property name="id" value="789"/>
+   			<property name="name" value="Nike Jordan"/>
+   			<property name="country" value="USA"/>
+   		</bean>
+   		
+        <bean id="pd" class="com.example.coreJava.springFramework.objectInjection.Product">
+        	<property name="id" value="1"/>
+        	<property name="name" value="Play Station 5"/>
+        	<property name="manufacturer">
+        		<bean class="com.example.coreJava.springFramework.objectInjection.Manufacturer">
+        			<property name="id" value="123"/>
+        			<property name="name" value="Sony"/>
+        			<property name="country" value="Japan"/>
+        		</bean>
+        	</property>
+        	<property name="price" value="150000"/>
+        </bean>
+       
+        <bean id="prod" class="com.example.coreJava.springFramework.objectInjection.Product">
+        	<constructor-arg name="id" value="2"/>
+        	<constructor-arg name="name" value="XBox"/>
+        	<constructor-arg name="manufacturer" ref="microsoft"/>
+        	<constructor-arg name="price" value="80000"/>
+        </bean> 
+      
+        <bean id="prod3" class="com.example.coreJava.springFramework.objectInjection.Product" autowire="constructor">
+        	<constructor-arg name="id" value="${product3.id}"/>
+        	<constructor-arg name="name" value="${product3.name}"/>
+        	<constructor-arg name="price" value="${product3.price}"/>
+        </bean> 
+      
+    
+</beans>

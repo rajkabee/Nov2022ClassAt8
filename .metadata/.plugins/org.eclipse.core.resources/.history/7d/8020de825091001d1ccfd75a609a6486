@@ -1,0 +1,11 @@
+package com.swingGui;
+
+public class SwingFormFields {
+	public static void main(String[] args) {
+		Frame frame = new Frame("Swing Form Fields");
+		
+		
+		frame.setVisible(true);
+		
+	}
+}

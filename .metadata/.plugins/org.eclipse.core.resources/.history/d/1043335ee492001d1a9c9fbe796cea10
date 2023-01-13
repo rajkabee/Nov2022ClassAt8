@@ -1,0 +1,34 @@
+package com.swingGui.jList;
+
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
+
+import com.swingGui.Frame;
+
+public class ListActionListener {
+	
+	public static void main(String[] args) {
+		Frame frame = new Frame("JList Example");
+		frame.setLayout(null);
+		DefaultListModel<String> listModel1 = new DefaultListModel<>();
+		listModel1.addElement("C++");
+		listModel1.addElement("Java");
+		listModel1.addElement("Python");
+		listModel1.addElement("PHP");
+		JList<String> list1 =  new JList<>(listModel1);
+		list1.setBounds(100, 100, 200, 70);
+		frame.add(list1);
+		
+		DefaultListModel<String> listModel2 = new DefaultListModel<>();
+		listModel2.addElement("Struts");
+		listModel2.addElement("Spring");
+		listModel2.addElement("Django");
+		listModel2.addElement("Laravel");
+		JList<String> list2 =  new JList<>(listModel2);
+		list2.setBounds(100, 400, 200, 70);
+		frame.add(list2);
+		
+		frame.setVisible(true);
+	}
+	
+}

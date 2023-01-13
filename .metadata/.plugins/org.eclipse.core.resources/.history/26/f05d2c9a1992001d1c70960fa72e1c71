@@ -1,0 +1,12 @@
+package com.swingGui.jTable;
+
+import com.swingGui.Frame;
+
+public class JTableExample {
+	public static void main(String[] args) {
+		Frame frame = new Frame("JTable Example");
+		
+		
+		frame.setVisible(true);
+	}
+}

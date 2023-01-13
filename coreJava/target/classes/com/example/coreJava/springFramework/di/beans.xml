@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="pd" class="com.example.coreJava.springFramework.di.Product">
+        	<property name="id" value="1"/>
+        	<property name="name" value="Play Station 5"/>
+        	<property name="manufacturer" value="Sony"/>
+        	<property name="price" value="150000"/>
+        </bean>
+        <bean id="prod" class="com.example.coreJava.springFramework.di.Product">
+        	<constructor-arg name="id" value="2"/>
+        	<constructor-arg name="name" value="XBox"/>
+        	<constructor-arg name="manufacturer" value="Microsoft"/>
+        	<constructor-arg name="price" value="80000"/>
+        </bean>
+</beans>

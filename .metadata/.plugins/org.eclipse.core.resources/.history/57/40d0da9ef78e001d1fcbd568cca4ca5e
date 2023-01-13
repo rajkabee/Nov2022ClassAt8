@@ -1,0 +1,17 @@
+package com.example.coreJava.springFramework.annotations;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SpringConfig {
+	@Bean
+	public Manufacturer getManufacturer() {
+		Manufacturer manu = new Manufacturer();
+		manu.setId(654321);
+		manu.setName("Annapurna");
+		manu.setCountry("Nepal");
+		return manu;
+	}
+	
+}

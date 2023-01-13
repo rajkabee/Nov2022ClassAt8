@@ -1,0 +1,16 @@
+package com.swingGui;
+
+import javax.swing.JButton;
+
+public class SwingFormFields {
+	public static void main(String[] args) {
+		Frame frame = new Frame("Swing Form Fields");
+		JButton submitBtn =  new JButton("Submit"); 
+		submitBtn.addActionListener(e -> {
+			System.out.println(e);
+		});
+		frame.add(submitBtn);
+		frame.setVisible(true);
+		
+	}
+}

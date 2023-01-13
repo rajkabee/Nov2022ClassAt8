@@ -1,0 +1,7 @@
+package com.swingGui.jMenu;
+
+public class JMenuExample {
+	public static void main(String[] args) {
+		Frame frame = new Frame();
+	}
+}

@@ -1,0 +1,9 @@
+package com.swingGui.scrollPane;
+
+import com.swingGui.Frame;
+
+public class JScrollPaneExample {
+	public static void main(String[] args) {
+		Frame frame = new Frame("ScrollPane example");
+	}
+}

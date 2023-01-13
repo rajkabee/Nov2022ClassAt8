@@ -1,0 +1,26 @@
+package com.swingGui;
+
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+
+public class JFrameExample {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("Dursikshya");
+		//frame.setTitle("Apple");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//frame.setSize(800, 500);
+		frame.setBounds(200, 100, 800, 500);
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage("logo.jpg"));
+		//frame.setUndecorated(true);
+		frame.setFont(new Font("algerian", 1, 16));
+		frame.setTitle("Dursikshya");
+		frame.setVisible(true);
+	}
+}

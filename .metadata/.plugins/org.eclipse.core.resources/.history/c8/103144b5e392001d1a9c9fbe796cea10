@@ -1,0 +1,11 @@
+package com.swingGui.jList;
+
+import com.swingGui.Frame;
+
+public class JListExample {
+	public static void main(String[] args) {
+		Frame frame = new Frame("JList Example");
+		
+		frame.setVisible(true);
+	}
+}

@@ -1,0 +1,37 @@
+package com.swingGui;
+
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.UIManager;
+
+public class SwingFormFields {
+	public static void main(String[] args) {
+		Frame frame = new Frame("Swing Form Fields");
+		UIManager.getLookAndFeelDefaults()
+        .put("defaultFont", new Font("Arial", Font.BOLD, 30));
+		//frame.setFont(new Font("Ariel", 1, 30));
+		frame.setLayout(null);
+		
+		JLabel header = new JLabel("SignUp Form");
+		header.setBounds(200, 10, 400, 40);
+		header.setHorizontalAlignment(JLabel.CENTER);
+		header.setFont(new Font("algerian", 0, 40));
+		frame.add(header);
+		
+		JLabel nameLabel = new JLabel("Name: ");
+		nameLabel.setBounds(200, 80, 200, 30);
+		frame.add(nameLabel);
+		
+		
+		JButton submitBtn =  new JButton("Submit");
+		submitBtn.setBounds(350, 420, 100, 30);
+		submitBtn.addActionListener(e -> {
+			System.out.println("The Submit button is clicked!");
+		});
+		frame.add(submitBtn);
+		frame.setVisible(true);
+		
+	}
+}

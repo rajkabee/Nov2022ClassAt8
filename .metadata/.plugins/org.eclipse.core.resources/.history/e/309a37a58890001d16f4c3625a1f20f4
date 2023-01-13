@@ -1,0 +1,31 @@
+package com.swingGui.layouts;
+
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import com.swingGui.Frame;
+
+public class GridLayoutExample {
+	public static void main(String[] args) {
+		Frame frame = new Frame("Flow Layout Example");
+		frame.setLayout(new GridLayout(3,3));
+		JButton btnOne = new JButton("One"); 
+		JButton btnTwo = new JButton("Two"); 
+		JButton btnThree = new JButton("Three"); 
+		JButton btnFour = new JButton("Four"); 
+		JButton btnFive = new JButton("Five"); 
+		JButton btnSix = new JButton("Six"); 
+		JButton btnSeven = new JButton("Seven"); 
+		JButton btnEight = new JButton("Eight"); 
+		JButton btnNine = new JButton("Nine"); 
+		frame.add(btnOne);
+		frame.add(btnTwo);
+		frame.add(btnThree);
+		frame.add(btnFour);
+		frame.add(btnFive);
+		frame.add(btnSix);
+		frame.add(btnSeven);
+		frame.add(btnEight);
+		frame.add(btnNine);
+		frame.setVisible(true);
+	}
+}

@@ -1,0 +1,11 @@
+package com.swingGui.layouts;
+
+import com.swingGui.Frame;
+import com.swingGui.jMenu.MyMenuBar;
+
+public class FlowLayoutExample {
+	public static void main(String[] args) {
+		Frame frame = new Frame("Flow Layout Example");
+		frame.setVisible(true);
+	}
+}

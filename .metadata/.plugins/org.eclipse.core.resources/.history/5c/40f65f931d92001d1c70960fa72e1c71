@@ -1,0 +1,60 @@
+package com.swingGui.jTable;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.table.DefaultTableModel;
+
+public class MyTableModel extends DefaultTableModel {
+	String[] cols = {"Sn.", "Name", "Email", "Contact"};
+	List<User> data = null;
+	public MyTableModel(String[] cols, List<User> data) {
+		super();
+		this.cols = cols;
+		this.data = data;
+	}
+	@Override
+	public int getColumnCount() {
+		if(cols==null) {
+			return 0;
+		}else {
+			return cols.length;
+		}
+	}
+	@Override
+	public int getRowCount() {
+		if(data==null) {
+			return 0;
+		}else {
+			return data.size();
+		}
+	}
+	
+	@Override
+	public String getColumnName(int column) {
+		return this.cols[column];
+	}
+	
+	@Override
+	public Object getValueAt(int row, int col) {
+		if(col==0) {
+			this.data.get(row).getId();
+		}
+		else if(col==1) {
+			this.data.get(row).getName();
+		}
+		else if(col==2) {
+			this.data.get(row).getEmail();
+		}
+		else {
+			this.data.get(row).getContact()
+		}
+	}
+	
+	@Override
+	public Class<?> getColumnClass(int columnIndex) {
+		// TODO Auto-generated method stub
+		return super.getColumnClass(columnIndex);
+	}
+	
+}

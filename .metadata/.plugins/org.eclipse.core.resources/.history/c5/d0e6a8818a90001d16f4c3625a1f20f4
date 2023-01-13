@@ -1,0 +1,50 @@
+package com.swingGui.layouts;
+
+
+import java.awt.GraphicsConfiguration;
+import java.awt.HeadlessException;
+import java.awt.Toolkit;
+
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+import com.swingGui.Frame;
+
+public class BoxLayoutExample extends JFrame {
+	
+	
+	public BoxLayoutExample() {
+		setTitle("Flow Layout Example");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(200, 100, 800, 500);
+		setIconImage(Toolkit.getDefaultToolkit().getImage("logo.jpg"));
+		setLayout (new BoxLayout (this, BoxLayout.Y_AXIS));  
+		JButton btnOne = new JButton("One"); 
+		JButton btnTwo = new JButton("Two"); 
+		JButton btnThree = new JButton("Three"); 
+		JButton btnFour = new JButton("Four"); 
+		JButton btnFive = new JButton("Five"); 
+		JButton btnSix = new JButton("Six"); 
+		JButton btnSeven = new JButton("Seven"); 
+		JButton btnEight = new JButton("Eight"); 
+		JButton btnNine = new JButton("Nine"); 
+		JButton btnTen = new JButton("Ten"); 
+		add(btnOne);
+		add(btnTwo);
+		add(btnThree);
+		add(btnFour);
+		add(btnFive);
+		add(btnSix);
+		add(btnSeven);
+		add(btnEight);
+		add(btnNine);
+		add(btnTen);
+		setVisible(true);
+	}
+
+
+	public static void main(String[] args) {
+		new BoxLayoutExample();
+	}
+}
